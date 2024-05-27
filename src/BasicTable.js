@@ -98,17 +98,10 @@ function BasicTable({
   };
 
   const getAvg = (key1, key2) => {
-    let naCount = 0;
     return formatNumber(
       sortedRows.reduce((sum, row) => {
-        if (key1 === 'N/A' || key2 === 'N/A') {
-          naCount++;
-          return sum;
-        }
         return key2 ? sum + row[key1] / row[key2] : sum + row[key1];
-      }, 0) /
-        sortedRows.length -
-        naCount
+      }, 0) / sortedRows.length
     );
   };
   return (
