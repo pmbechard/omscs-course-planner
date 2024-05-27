@@ -1,15 +1,20 @@
 .container {
-    width: auto;
+  width: auto;
 }
 
 .container .table thead {
-    position: sticky;
-    top: 0;
-    background-color: #edecec;
+  position: sticky;
+  top: 0;
+  background-color: #edecec;
 }
 
 @media only screen and (max-width: 600px) {
-    .container {
-        overflow-x: scroll;
-    }
+  .container {
+    overflow-x: scroll;
+  }
+}
+
+.averages-row {
+  font-weight: bold;
+  background-color: rgba(0, 128, 0, 0.151);
 }
